@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0f1e;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.navbar {
+  background: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 2px solid #ff3a6f;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff3a6f;
+}
+
+.logo span {
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ff3a6f;
+}
+
+.home {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home span {
+  color: #ff3a6f;
+}
+
+.home p {
+  color: #cbd5e1;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #ff3a6f;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #e52e63;
+}
+
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.game-card {
+  background: #111827;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+.details {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.details img {
+  width: 450px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.details-info {
+  flex: 1;
+  background: #111827;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.details-info h1 {
+  color: #ff3a6f;
+  margin-bottom: 15px;
+}
+
+.details-info p {
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.login-box {
+  background: #111827;
+  width: 350px;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff3a6f;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #ff3a6f;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.about-us {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-us p {
+  margin-top: 15px;
+  color: #cbd5e1;
+}
+
+footer {
+  background: #050a15;
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+  .details img {
+    width: 100%;
+    height: auto;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+}
